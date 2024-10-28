@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabin Connect</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cabin Connect</h1>
+
+        <!-- Form starts here -->
+        <form id="cabinForm">
+
+            <!-- Date Picker -->
+            <div class="date-container">
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" class="date-input" required>
+            </div>
+            <h2 id="notification" class="hidden"></h2>
+            <!-- Time Slots -->
+             <h1 id='heading'class="hidden">Time Slots</h1>
+            <div id="timeSlots" class="slots hidden">
+                <!-- Time slots will be generated here -->
+            </div>
+
+            <!-- Custom Slot Maker -->
+            <div id="customSlotMaker" class="custom-slot-maker hidden">
+                <h2>Make Your Own Slot:</h2>
+                <div>
+                <label for="start-time">Start Time:</label>
+                <input type="time" id="start-time" name="start-time">
+            </div><br>
+            <div>
+                <label for="end-time">End Time:</label>
+                <input type="time" id="end-time" name="end-time">
+            </div><br>
+                <button type="button" id="addSlot" class="custom-add-btn">Add Custom Slot</button>
+            </div>
+
+            <!-- Enter Message -->
+            <div id="messageBox" class="message-box hidden">
+                <h2 for="message">Enter your message:</h2>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+            </div>
+
+            <!-- Save Button -->
+            <button type="submit" id="saveButton" class="save-btn hidden">Save</button>
+
+        </form>
+        <!-- Form ends here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
